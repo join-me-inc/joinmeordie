@@ -1105,7 +1105,7 @@
             </build>
         </profile>
         <profile>
-            <id>heroku</id>
+            <id>heroku-db</id>
             <build>
                 <plugins>
                     <plugin>
