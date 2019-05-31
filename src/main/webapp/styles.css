@@ -1,0 +1,367 @@
+/*  Estilos por defecto para los elementos HTML */
+/*  -------------------------------------------------- */
+
+:root {
+    --size-xs: 0.422rem;
+    --size-s: 0.563rem;
+    --size-m: 0.75rem;
+    --size-l: 1rem;
+    --size-xl: 1.333rem;
+    --size-2xl: 1.777rem;
+    --size-3xl: 2.369rem;
+    --size-4xl: 3.157rem;
+    --color-error: #d7422d;
+    --color-lavender: #d4c5e2;
+    --color-periwinkle: #c9d7f8;
+    --color-powder-blue: #a7e2e3;
+    --color-eton-blue: #80cfa9;
+    --color-stormcloud: #4c6663;
+}
+
+html {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    float: left;
+    font-size: var(--size-m);
+    line-height: var(--size-2xl);
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    color: #222;
+    margin: auto;
+    padding: 0;
+    background-color: #c9d7f8;
+}
+
+app-root {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 0 5rem;
+}
+h1 {
+    font-size: var(--size-4xl);
+    margin-top: 4rem;
+    line-height: 4rem;
+
+    letter-spacing: 0.3rem;
+}
+h2 {
+    color: dimgrey;
+    font-size: var(--size-xl);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    padding-left: 3px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
+    width: 100%;
+}
+
+select[multiple] {
+    height: auto;
+}
+
+select:focus {
+    border-color: #66afe9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none;
+}
+
+textarea {
+    padding: 0.2em;
+    margin: 0px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    font-size: 13px;
+    resize: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+textarea:focus {
+    border-color: #66afe9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none;
+}
+
+input {
+    padding-left: 3px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+input:focus {
+    border-color: #66afe9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none;
+}
+
+input:not([type='checkbox']):not([type='radio']) {
+    width: 100%;
+}
+
+.radios {
+    position: relative;
+    float: left;
+}
+
+.radios > li {
+    position: relative;
+    float: left;
+}
+
+.radios > li > span {
+    position: relative;
+    float: left;
+    margin-top: 2px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table tr th {
+    border-top: 0;
+    color: #666;
+    text-align: left;
+    padding: 5px 8px;
+    font-size: var(--size-s);
+    text-transform: uppercase;
+    line-height: var(--size-l);
+}
+
+table tr td {
+    padding: 5px 8px;
+    line-height: var(--size-l);
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 2rem;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+tr.paginate td {
+    text-align: center;
+    color: #737373;
+    padding-top: 0.5rem;
+}
+
+input[type='checkbox'].value {
+    position: relative;
+    float: left;
+    margin-top: 7px;
+}
+
+li.paginate {
+    text-align: center;
+    color: #737373;
+    cursor: pointer;
+}
+
+input:invalid.ng-touched,
+input.ng-invalid.ng-touched,
+textarea:invalid.ng-touched,
+textarea.ng-invalid.ng-touched,
+select:invalid.ng-touched,
+select.ng-invalid.ng-touched {
+    border-color: var(--color-error);
+}
+
+/*  BUTTONS */
+/*  -------------------------------------------------- */
+.buttons {
+    margin-top: 5rem;
+}
+button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    background-image: none;
+    background-color: #fcfcfc;
+    white-space: nowrap;
+    user-select: none;
+    padding: 1.5em;
+    font-size: var(--size-l);
+    color: white;
+    background-color: #4c6663;
+    border: 0;
+}
+
+button:hover:not(:disabled),
+button.active {
+    background-color: var(--color-eton-blue);
+    color: white;
+}
+
+button:disabled {
+    cursor: initial;
+}
+
+/*  FORMULARIOS */
+/*  -------------------------------------------------- */
+
+ul.kv-list {
+    position: relative;
+    float: left;
+}
+
+ul.kv-list li {
+    position: relative;
+    float: left;
+    padding: 0.5rem;
+}
+
+ul.kv-list li .key {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: var(--size-s);
+    line-height: var(--size-m);
+    color: #666;
+    font-weight: bold;
+}
+
+ul.kv-list li .value {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+ul.kv-list li:hover {
+    background-color: #f5f5f5;
+}
+
+ul.kv-list li .icon {
+    padding-right: 0.5rem;
+}
+
+/*  PANELES */
+/*  -------------------------------------------------- */
+
+.clickable {
+    cursor: pointer;
+}
+
+.inner-header {
+    position: relative;
+    float: left;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    text-align: center;
+    font-weight: bold;
+    color: #737373;
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+}
+
+.inner-header .title {
+    position: relative;
+    float: left;
+}
+
+.inner-header ul {
+    position: relative;
+    float: right;
+    margin-right: 0.25rem;
+}
+
+.inner-header ul li {
+    position: relative;
+    float: right;
+    cursor: pointer;
+    padding: 0rem 0.25rem;
+}
+
+.inner-header ul li:hover {
+    color: #222;
+}
+
+/*  COLORES */
+/*  -------------------------------------------------- */
+
+/*  DIRECTIVAS */
+/*  -------------------------------------------------- */
+
+@keyframes copiedAnimation {
+    0% {
+        background-color: #f4e195;
+    }
+    50% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #f4e195;
+    }
+}
+.app-copy-clipboard {
+    cursor: pointer;
+    user-select: none;
+}
+.app-copy-clipboard:not(.copied):hover {
+    background-color: #f4e195;
+}
+.app-copy-clipboard.copied {
+    animation-name: copiedAnimation;
+    animation-duration: 0.4s;
+}
+
+/*  ARRANQUE */
+/*  -------------------------------------------------- */
+
+.app-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 2.75rem);
+    color: #4d4d4d;
+    font-size: var(--size-xl);
+    line-height: var(--size-2xl);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    app-root {
+        padding: 0;
+    }
+}

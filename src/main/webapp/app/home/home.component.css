@@ -1,0 +1,26 @@
+.header {
+    text-align: center;
+    margin-top: 7rem;
+}
+.link {
+    margin-top: 5rem;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    background-image: none;
+    background-color: #fcfcfc;
+    white-space: nowrap;
+    user-select: none;
+    padding: 1.5em;
+    font-size: var(--size-l);
+    color: white;
+    background-color: #4c6663;
+    border: 0;
+    text-decoration: none;
+}
+.link:hover {
+    background-color: var(--color-eton-blue);
+    color: black;
+}

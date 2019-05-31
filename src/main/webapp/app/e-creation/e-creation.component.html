@@ -1,0 +1,12 @@
+<h1>{{ title }}</h1>
+<form #creationForm="ngForm" (ngSubmit)="onSubmit()">
+  <input name="name" placeholder="Event name" />
+  <textarea
+    name="description"
+    cols="30"
+    rows="10"
+    placeholder="Event description"
+  ></textarea>
+
+  <button type="submit" [disabled]="!creationForm.valid">Submit</button>
+</form>

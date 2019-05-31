@@ -1,23 +1,17 @@
-import './vendor.ts';
-
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { NgbDatepickerConfig } from '@ng-bootstrap/ng-bootstrap';
-import { Ng2Webstorage } from 'ngx-webstorage';
-import { NgJhipsterModule } from 'ng-jhipster';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import * as moment from 'moment';
 import { AppComponent } from './app.component';
+import { ECreationComponent } from './e-creation/e-creation.component';
+import { EDetailsComponent } from './e-details/e-details.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-    declarations: [AppComponent],
-    imports: [BrowserModule, AppRoutingModule],
+    declarations: [AppComponent, ECreationComponent, EDetailsComponent, PageNotFoundComponent, HomeComponent],
+    imports: [BrowserModule, AppRoutingModule, FormsModule],
     providers: [],
     bootstrap: [AppComponent]
 })
-export class JoinAppModule {
-    constructor(private dpConfig: NgbDatepickerConfig) {
-        // this.dpConfig.minDate = { year: moment().year() - 100, month: 1, day: 1 };
-    }
-}
+export class AppModule {}

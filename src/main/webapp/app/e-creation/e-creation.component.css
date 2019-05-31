@@ -1,0 +1,19 @@
+form {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+button {
+    float: right;
+}
+
+input,
+textarea {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
