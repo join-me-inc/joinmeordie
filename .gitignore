@@ -10,11 +10,13 @@
 /app/**/*.js.map
 
 # dependencies
+**/node_modules
 /node_modules
 /bower_components
 
 # IDEs and editors
 /.idea
+*.iml   
 
 # misc
 /.sass-cache
@@ -70,4 +72,3 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 # End of https://www.gitignore.io/api/java,maven,angular
-/build
