@@ -19,12 +19,11 @@
             "inlineStyle": true,
             "inlineTemplate": false,
             "spec": false,
-            "prefix": "jhi",
-            "styleExt": "scss"
+            "prefix": "join"
         },
         "@schematics/angular:directive": {
             "spec": false,
-            "prefix": "jhi"
+            "prefix": "join"
         },
         "@schematics/angular:guard": {
             "spec": false
