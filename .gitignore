@@ -1,6 +1,9 @@
 # Created by https://www.gitignore.io/api/java,maven,angular
 # Edit at https://www.gitignore.io/?templates=java,maven,angular
 
+.settings/
+build/
+
 ### Angular ###
 ## Angular ##
 # compiled output
@@ -16,7 +19,7 @@
 
 # IDEs and editors
 /.idea
-*.iml   
+*.iml
 
 # misc
 /.sass-cache
