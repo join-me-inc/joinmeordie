@@ -3,6 +3,8 @@
 
 .settings/
 build/
+.classpath
+.project
 
 ### Angular ###
 ## Angular ##
